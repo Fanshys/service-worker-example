@@ -1,6 +1,14 @@
+import { TodoList } from "./components"
+
 function App() {
   return (
-    <div></div>
+    <main>
+      <div className="container">
+        <h1>Тестируем Service Workers</h1>
+
+        <TodoList />
+      </div>
+    </main>
   )
 }
 
