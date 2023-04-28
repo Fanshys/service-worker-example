@@ -11,9 +11,6 @@ self.addEventListener('install', async () => {
   const cache = await caches.open(staticCacheName);
 
   await cache.addAll(assetUrls);
-
-  // Если хотим принудительно запустить новую версию воркера
-  // self.skipWaiting();
 });
 
 self.addEventListener('activate', async () => {
